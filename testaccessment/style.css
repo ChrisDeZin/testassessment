@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -21,7 +22,9 @@ body {
   display: inline-block;
   border: none;
   position: relative;
+
 }
+
 .greeting {
   font-size: 60px;
   position: absolute;
@@ -58,6 +61,7 @@ body {
   line-height: 0.708;
   text-align: center;
 }
+
 hr.shortline {
   border-top: 1px solid white;
   left: 5px;
@@ -65,6 +69,7 @@ hr.shortline {
   width: 110px;
   position: absolute;
 }
+
 .food .paragraph,
 .fashion .paragraph,
 .entertain .paragraph {
@@ -79,6 +84,7 @@ hr.shortline {
   height: 178px;
   font-weight: lighter;
 }
+
 .food_readmore,
 .fashion_readmore,
 .entertain_readmore {
@@ -95,11 +101,13 @@ hr.shortline {
   width: 293px;
   height: 116px;
 }
+
 .left-food,
 .left-fashion,
 .left-entertain {
   position: relative;
 }
+
 .food_client_logo,
 .fashion_client_logo,
 .entertain_client_logo {
@@ -107,6 +115,7 @@ hr.shortline {
   margin-top: 1794px;
   left: 100px;
 }
+
 .food_client_logo .food_logo,
 .fashion_client_logo .fashion_logo,
 .entertain_client_logo .entertain_logo {
@@ -118,10 +127,12 @@ hr.shortline {
   margin-left: 500px;
   margin-top: 50px;
 }
+
 .socialmedia li {
   float: left;
   list-style-type: none;
 }
+
 .socialmedia li a {
   font-size: 60px;
   display: inline-block;
@@ -149,6 +160,7 @@ hr.shortline {
 .food-container {
   display: inline-block;
 }
+
 .food-container .left-food,
 .food-container .right-food,
 .fashion-container .left-fashion,
@@ -165,9 +177,11 @@ hr.shortline {
   /* background-image: url("./image/food_left.png"); */
   background-color: #04b4b4;
 }
+
 .food-container .right-food {
   background-image: url("./image/food_right.jpg");
 }
+
 .fashion-container .left-fashion {
   /* background-image: url("./image/fashion_left.png"); */
   background-color: #ec048c;
@@ -177,10 +191,12 @@ hr.shortline {
   background-image: url("./image/fashion_right.jpg");
   background-color: #ec048c;
 }
+
 .entertain-container .left-entertain {
   background-color: #fcbc14;
   /* background-image: url("./image/entertain_left.png"); */
 }
+
 .entertain-container .right-entertain {
   background-image: url("./image/entertain_right.jpg");
 }
@@ -190,6 +206,7 @@ hr.shortline {
   font-size: 0;
   width: inherit;
 }
+
 .offer-container,
 .event-container {
   display: inline-block;
@@ -201,12 +218,15 @@ hr.shortline {
   height: 535px;
   display: inline-block;
 }
+
 .offers-header {
   background-color: #04b4b4;
 }
+
 .event-header {
   background-color: #872175;
 }
+
 .offer-item1,
 .offer-item2,
 .offer-item3,
@@ -217,17 +237,21 @@ hr.shortline {
   background-size: cover;
   position: relative;
 }
+
 .offer-item1 {
   background-image: url("./image/offer1.png");
   filter: brightness(20%);
 }
+
 .offer-item2 {
   background-image: url("./image/offer2.png");
 }
+
 .offer-item3 {
   background-image: url("./image/offer3.png");
   filter: brightness(20%);
 }
+
 .offer-item4 {
   background-image: url("./image/offer4.png");
   filter: brightness(20%);
@@ -242,27 +266,33 @@ hr.shortline {
   display: inline-block;
   background-size: cover;
 }
+
 .event-item1 {
   background-image: url("./image/event1.png");
   filter: brightness(20%);
 }
+
 .event-item2 {
   background-image: url("./image/event2.png");
   filter: brightness(20%);
 }
+
 .event-item3 {
   background-image: url("./image/event3.png");
   filter: brightness(20%);
 }
+
 .event-item4 {
   background-image: url("./image/event4.png");
   filter: brightness(20%);
 }
+
 .news {
   font-size: 150px;
   color: white;
   padding-top: 250px;
 }
+
 .offers {
   margin-left: 350px;
   font-size: 150px;
@@ -270,6 +300,7 @@ hr.shortline {
   padding-top: 300px;
   position: absolute;
 }
+
 .offers-alert,
 .event-alert {
   font-size: 50px;
@@ -283,4 +314,26 @@ hr.shortline {
   text-align: left;
   z-index: -1;
   font-variant: initial;
+}
+
+/* mediaquery part */
+
+
+
+@media screen and (min-width: 736px) {
+  div.banner {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    div.banner {
+      font-size: 30px;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("./image/banner_image.png");
+    }
+  }
 }
